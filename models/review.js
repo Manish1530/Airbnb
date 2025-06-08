@@ -1,5 +1,5 @@
 const mongoose=require("mongoose");
-const { schema } = require("./listing");
+// const { schema } = require("./listing");
 const { number, date } = require("joi");
 const Schema=mongoose.Schema;
 
@@ -10,10 +10,7 @@ const reviewSchema=new Schema({
         min:1,
         max:5
     },
-    // comment: {               //after apna
-    // type: String,
-    // required: true,
-//   },
+
     createdAt:{
         type:Date,
         default:Date.now()
