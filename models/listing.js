@@ -10,8 +10,8 @@ const listingSchema=new Schema({
     },
     description:String,
     image: {
-        type: String, // Store only the URL as a string
-        set: (v) => (typeof v === "object" ? v.url : v) // If an object is provided, store only the 'url'
+        url:String,
+        filename:String,
     },
     price:Number,
     location:String,
